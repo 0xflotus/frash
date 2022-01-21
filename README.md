@@ -1,6 +1,10 @@
 # frash
 
-Juggling with hex
+Juggling with hex numbers. 
+
+With `frash` you can convert integers and floats to their hexadecimal equivalent.
+
+Below you can find some examples.
 
 ## Install
 

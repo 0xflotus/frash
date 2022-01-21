@@ -6,8 +6,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="frash",
-    version="0.0.3",
-    description="Juggling with hex",
+    version="0.0.4",
+    description="Juggling with hex numbers. Convert integers and floats to hex.",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/0xflotus/frash",
@@ -15,9 +15,13 @@ setup(
     author_email="0xflotus+pypi@gmail.com",
     license="MIT",
     classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
+        "Topic :: Software Development :: Libraries ",
+        "Topic :: Software Development :: Hexadecimal ",
     ],
     packages=["frash"],
     include_package_data=True,
