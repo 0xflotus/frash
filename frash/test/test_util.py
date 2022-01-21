@@ -26,7 +26,7 @@ def test_normalize_to_hex():
     assert "0x0" == normalize_to_hex("0."), "Should be 0"
     assert "0x0" == normalize_to_hex("0"), "Should be 0"
     assert "0x0" == normalize_to_hex(".0"), "Should be 0"
-    # Bug
+    # 0e0 results in 0x0.p0
     assert "0x0.p0" == normalize_to_hex("0e0"), "Should be 0"
     assert "0x0" == normalize_to_hex("0e4"), "Should be 0"
 
