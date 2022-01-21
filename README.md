@@ -20,7 +20,7 @@ bash> frash 255.
 $ 0x1.fep7
 
 bash> frash 98.2
-$ 0x1.88ccccccccccdp
+$ 0x1.88ccccccccccdp6
 
 bash> frash -r 0x1.88ccccccccccdp6
 $ 98.2
