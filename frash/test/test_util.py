@@ -43,3 +43,11 @@ def test_from_hex():
     assert "171" == from_hex("ab.0"), "Should be 171"
     assert "171" == from_hex("0xa.bp4"), "Should be 171"
     assert "171" == from_hex("0xab"), "Should be 171"
+
+def test_from_oct():
+    assert "8" == from_oct("010"), "Should be 8"
+    assert "8" == from_oct("0o10"), "Should be 8"
+    assert "8" == from_oct("10"), "Should be 8"
+
+def test_normalize_to_oct():
+    assert "0o10" == normalize_to_oct("8"), "Should be 0o10"

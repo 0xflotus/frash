@@ -13,6 +13,7 @@ def normalize_to_hex(input):
             return hex(int(float(input)))
         except ValueError as ve:
             print(ve)
+            sys.exit(-1)
     else:
         try:
             return hex(int(input))
@@ -26,6 +27,7 @@ def normalize_to_hex(input):
                 return output
             except ValueError as ve:
                 print(ve)
+                sys.exit(-1)
 
 
 def from_hex(input):
@@ -34,5 +36,23 @@ def from_hex(input):
         return f"{output:f}".rstrip("0").rstrip(".")
     except ValueError as ve:
         print(ve)
+        sys.exit(-1)
     except OverflowError as oe:
         print(oe)
+        sys.exit(-1)
+
+
+def from_oct(input):
+    try:
+        return str(int(input, 0o10))
+    except ValueError as ve:
+        print(ve)
+        sys.exit(-1)
+
+
+def normalize_to_oct(input):
+    try:
+        return oct(int(input))
+    except ValueError as ve:
+        print(ve)
+        sys.exit(-1)

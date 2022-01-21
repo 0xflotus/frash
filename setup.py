@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="frash",
-    version="0.0.6",
+    version="0.0.8",
     description="Juggling with hex numbers. Convert integers and floats to hex.",
     long_description=README,
     long_description_content_type="text/markdown",

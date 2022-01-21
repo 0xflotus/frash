@@ -58,3 +58,18 @@ $ 0x1.f4p9
 bash> frash 1e-4
 $ 0x1.a36e2eb1c432dp-14
 ```
+
+#### Octal Integers
+
+There is a limited support for octal integer numbers.
+
+```console
+bash> frash -o 8
+$ 0o10
+
+bash> frash -r -o 010
+$ 8
+
+bash> frash -r -o 0o10
+$ 8
+```
