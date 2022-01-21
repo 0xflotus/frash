@@ -21,7 +21,6 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
         "Topic :: Software Development :: Libraries ",
-        "Topic :: Software Development :: Hexadecimal ",
     ],
     packages=["frash"],
     include_package_data=True,
