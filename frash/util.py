@@ -4,6 +4,15 @@ import sys
 def normalize_to_hex(input):
     if input in [".0", "0."]:
         return "0x0"
+    elif (
+        ("e" in input or "E" in input)
+        and (float(input) >= 1 or float(input) == 0)
+        and not ("e0" in input or "E0" in input)
+    ):
+        try:
+            return hex(int(float(input)))
+        except ValueError as ve:
+            print(ve)
     else:
         try:
             return hex(int(input))
@@ -15,14 +24,15 @@ def normalize_to_hex(input):
                 out_arr[1] = out_arr[1].lstrip("+")
                 output = out_arr[0] + "p" + out_arr[1]
                 return output
-            except ValueError:
-                print("Wrong input!")
-                sys.exit(-1)
+            except ValueError as ve:
+                print(ve)
 
 
 def from_hex(input):
     try:
         output = float.fromhex(input)
         return f"{output:f}".rstrip("0").rstrip(".")
-    except ValueError:
-        sys.exit(-1)
+    except ValueError as ve:
+        print(ve)
+    except OverflowError as oe:
+        print(oe)

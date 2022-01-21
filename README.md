@@ -51,4 +51,10 @@ $ 5492
 
 bash> frash -r ABAP1
 $ 5492
+
+bash> frash 1e3
+$ 0x1.f4p9
+
+bash> frash 1e-4
+$ 0x1.a36e2eb1c432dp-14
 ```
