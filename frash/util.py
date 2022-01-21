@@ -3,7 +3,7 @@ import sys
 
 def normalize_to_hex(input):
     if input in [".0", "0."]:
-        return "0x00"
+        return "0x0"
     else:
         try:
             return hex(int(input))
