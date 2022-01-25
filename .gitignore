@@ -1,4 +1,6 @@
-*.pyc
-build/
-dist/
-*.egg*
+/*
+
+!*.py
+!README.md
+!LICENSE
+!.gitignore
